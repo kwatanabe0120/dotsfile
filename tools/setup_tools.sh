@@ -2,8 +2,6 @@
 
 set -e  # Stop on error
 
-echo "🍺 Setting up Homebrew..."
-
 # Install Homebrew
 if ! command -v brew &>/dev/null; then
 	echo "Installing Homebrew..."
@@ -20,4 +18,11 @@ else
 	echo "✅ CocoaPods is already installed"
 fi
 
-echo "🎉 Homebrew & CocoaPods setup complete!"
+# Install Neovim (via brew)
+if ! command -v nvim &>/dev/null; then
+	echo "Setting up NeoVim..."
+	brew install neovim
+else
+	echo "✅ neovim is already installed"
+fi
+echo "🎉 Homebrew & CocoaPods & neovim setup complete!"
