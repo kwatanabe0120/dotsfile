@@ -19,6 +19,13 @@ alias vi="nvim"
 alias vim="nvim"
 alias view="nvim -R"
 
+# zsh基本設定
+setopt no_beep
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt hist_ignore_dups
+
+
 # Pasted from web https://zenn.dev/k4zu/articles/zsh-tutorial
 #################################  HISTORY  #################################
 # history
